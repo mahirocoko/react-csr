@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    @apply bg-red-50;
+
+    @at-root .dark & {
+      @apply bg-black text-white;
+    }
+  }
+}
