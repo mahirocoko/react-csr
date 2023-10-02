@@ -1,8 +1,7 @@
 import { createContext, useEffect, useState } from 'react'
 
 import { STORE_KEY } from '@/contants'
-
-type Theme = 'dark' | 'light' | 'system'
+import type { Theme } from '@/types/theme'
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -29,6 +28,8 @@ export function ThemeProvider({
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => (localStorage.getItem(storageKey) as Theme) || defaultTheme)
+
+  console.log(theme)
 
   useEffect(() => {
     const root = window.document.documentElement

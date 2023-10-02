@@ -1,0 +1,32 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    ".*ClassName*",
+    "enter",
+    "enterFrom",
+    "enterTo",
+    "leave",
+    "leaveFrom",
+    "leaveTo"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "clsx\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cn\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    [
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "mdx.experimentalLanguageServer": true
+}

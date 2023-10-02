@@ -1,9 +1,15 @@
 @layer base {
   body {
-    @apply bg-red-50;
+    @apply bg-background text-foreground;
 
-    @at-root .dark & {
-      @apply bg-black text-white;
-    }
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+  }
+
+  *,
+  ::before,
+  ::after {
+    @apply border-divider;
   }
 }
