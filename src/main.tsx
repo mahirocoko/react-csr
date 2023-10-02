@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import App from './App'
 
+import '@fontsource-variable/inter'
 import '@/styles/globals.scss'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
