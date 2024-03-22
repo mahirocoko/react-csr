@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
 
-RUN npm install pnpm
+RUN npm install -g pnpm
 
 RUN pnpm install
 
