@@ -52,7 +52,7 @@ jobs:
           location: nortezh-stag
           name: v-converter
           image: ${{ steps.meta.outputs.tags }}
-          port: 80
+          port: 8080
           type: WebService
         env:
           SA_AUTH_EMAIL: ${{ secrets.SA_AUTH_EMAIL }}
