@@ -50,7 +50,7 @@ jobs:
           action: deployment.create-revision
           project: my-project-01
           location: nortezh-stag
-          name: stag-api
+          name: v-converter
           image: ${{ steps.meta.outputs.tags }}
           port: 80
           type: WebService
