@@ -8,21 +8,14 @@ RUN apk update && \
 # Set the working directory
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json .
 
-RUN npm install -g pnpm
+RUN yarn install
 
-RUN pnpm install
-
-#RUN npx lerna bootstrap
-
-RUN pnpm build
+RUN yarn build
 
 WORKDIR /app
 
-EXPOSE 3000
-
-# Start the server in production mode
-ENV PORT 3000
+EXPOSE 8080
 
 CMD pnpm preview
