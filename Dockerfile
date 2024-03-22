@@ -16,4 +16,4 @@ WORKDIR /app
 
 EXPOSE 8080
 
-CMD pnpm preview
+CMD yarn preview
