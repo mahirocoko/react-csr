@@ -10,11 +10,13 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
 
-RUN yarn install
+RUN npm install pnpm
+
+RUN pnpm install
 
 #RUN npx lerna bootstrap
 
-RUN yarn build
+RUN pnpm build
 
 WORKDIR /app
 
