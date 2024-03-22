@@ -8,7 +8,7 @@ RUN apk update && \
 # Set the working directory
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json pnpm-lock.yaml ./
 
 RUN yarn install
 
