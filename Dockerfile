@@ -8,7 +8,7 @@ RUN apk update && \
 # Set the working directory
 WORKDIR /app
 
-COPY package.json .
+COPY package.json yarn.lock .
 
 RUN yarn install
 
