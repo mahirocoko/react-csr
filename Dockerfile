@@ -25,4 +25,4 @@ EXPOSE 3000
 # Start the server in production mode
 ENV PORT 3000
 
-CMD cd packages/user && yarn run server:prod
+CMD pnpm preview
